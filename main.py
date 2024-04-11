@@ -30,6 +30,12 @@ def main():
             print(f"Orignal password : {num_string}")
             # print(f"Decoded password: " + decode(num_string))
 
-
+#Quang Dat Hoang
+def decode(num_string: str) -> str:
+    decoded = ""
+    for char in num_string:
+        decoded += str((int(char) - 3) % 10)
+    return decoded
+    
 if __name__ == "__main__":
     main()
