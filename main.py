@@ -1,5 +1,11 @@
 # Khizar Khan
 
+#Quang Dat Hoang
+def decode(num_string: str) -> str:
+    decoded = ""
+    for char in num_string:
+        decoded += str((int(char) - 3) % 10)
+    return decoded
 
 def encode(num_string: str) -> str:
     encoded = ""
